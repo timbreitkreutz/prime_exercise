@@ -6,7 +6,7 @@
 class Fixnum
   def prime?
     return true if self == 1
-    (2..self/2).each do |n|
+    (2..(Math.sqrt([2, self].max).to_i)).each do |n|
       return false if self % n == 0
     end
     self >= 1

@@ -10,6 +10,8 @@ class TestPrime < Test::Unit::TestCase
     assert 7.prime?
     assert 167.prime?
     assert 523.prime?
+    assert 104729.prime?
+    assert 982451653.prime?
   end
 
   def test_prime_fail
@@ -17,6 +19,7 @@ class TestPrime < Test::Unit::TestCase
     assert !10.prime?
     assert !51.prime?
     assert !723.prime?
+    assert !982451683.prime?
   end
   
   def test_boundaries
